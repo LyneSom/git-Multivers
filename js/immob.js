@@ -226,3 +226,53 @@ function previousImage(a,e){
 
 //set interval
 setInterval(Maison, 6000);
+
+
+
+
+// partie pour la boite de dialogue
+
+const btnul = document.querySelectorAll(".carousel-item ul")
+// console.log(document.getElementsByClassName("show"))
+
+for (var index = 0 ; index < btnul.length; index++) {
+  btnul[index].addEventListener("click", (e) => {
+    e.preventDefault
+    if(document.getElementsByClassName("show").length > 0){
+      document.getElementsByClassName("show")[0].classList.remove("show")
+    }
+    var ul = e.target
+    var parent = ul.parentElement.parentElement
+    console.log(parent)
+    var dialogbox = parent.querySelector(".dialogbox")
+    console.log(dialogbox)
+    // dialogbox.style.display = 'flex'
+    dialogbox.classList.add("show")
+    
+  })
+  
+}
+let btnclose = document.querySelectorAll(".fa-close")
+for(let i = 0; i < btnclose.length; i++){
+  btnclose[i].addEventListener("click", (e) =>{
+    e.preventDefault
+      var ul = e.target
+      var parent = ul.parentElement.parentElement
+      console.log(parent)
+      var dialogbox = parent.querySelector(".dialogbox")
+      console.log(dialogbox)
+      dialogbox.style.display = 'none'
+     
+  })
+  
+}
+
+
+
+
+
+let edit = document.getElementById("edit")
+console.log(edit)
+edit.addEventListener("click", () =>{
+  window.location.href = "HouseModif.php"
+})

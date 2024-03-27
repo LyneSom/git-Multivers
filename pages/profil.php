@@ -55,8 +55,8 @@
             // Définir le chemin du répertoire cible
             $target_directory = "../temp";
 
-            // Définir le nom du fichier copié
-            $target_name = uniqid() . "_" . $source_name;
+            // Définir le nom du fichier copié uniqid() . "_" . 
+            $target_name = $source_name;
 
             // Copier le fichier
             if (move_uploaded_file($source_file, $target_directory . "/" . $target_name)) {

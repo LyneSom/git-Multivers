@@ -77,23 +77,50 @@
                         $query = mysqli_query($conn, "SELECT * FROM house WHERE categories = 'Apartement'");
                         while($ligne = mysqli_fetch_assoc($query)){
                     ?>
-                        <div class="carousel-item">
-                            <div class="item-top">
-                                <div class="caroussel-img"><img src="../assets/<?php echo $ligne['image'] ?>"
-                                        alt="Image 1"></div>
-                                <div class="item-desc">
-                                    <div class="item-title"><?php echo $ligne['title'] ?></div>
-                                    <div class="pieces"> <?php echo $ligne['pieces'] ?> <span>pièces</span></div>
+                    <div class="carousel-item">
+                        <div class="item-top">
+                            <div class="caroussel-img"><img src="../assets/<?php echo $ligne['image'] ?>" alt="Image 1">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div class="dialogbox">
+                                    <i class="fas fa-close  fa-1x"></i>
+                                    <div class="dialog">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <div id="edit">Modifier la publication</div>
+
+                                    </div>
+                                    <div class="dialog">
+                                        <i class="fa-solid fa-trash"></i>
+                                        <div>Deplacer dans la corbeille</div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item-bottom">
-                                <a href="presentation.php?house=<?php echo $ligne['id'] ?>"><div>voir +</div></a>
-                                <button type="button"><i class="fa-solid fa-share-nodes fa-2x"></i></button>
+                            <div class="item-desc">
+                                <div class="item-title">
+                                    <?php echo $ligne['title'] ?>
+                                </div>
+                                <div class="pieces">
+                                    <?php echo $ligne['pieces'] ?> <span>pièces</span>
+                                </div>
                             </div>
                         </div>
+                        <div class="item-bottom">
+                            <a href="presentation.php?house=<?php echo $ligne['id'] ?>">
+                                <div>voir +</div>
+                            </a>
+                            <button type="button"><i class="fa-solid fa-share-nodes fa-2x"></i></button>
+                        </div>
+                    </div>
                     <?php } ?>
                 </div>
-                
+
                 <div class="carousel-navigation">
                     <div id="nothing"></div>
                     <button id="prevBtn">&#10094;</button>
@@ -101,32 +128,60 @@
                 </div>
             </div>
         </div>
-        
+
         <div class="others studios-chambres">
-            <h3>studios  &  chambres</h3>
+            <h3>studios & chambres</h3>
             <div class="carousel-container">
                 <div class="carousel-slide">
                     <?php 
                         $query = mysqli_query($conn, "SELECT * FROM house WHERE categories = 'Studios' OR  categories = 'Chambre'");
                         while($ligne = mysqli_fetch_assoc($query)){
                     ?>
-                        <div class="carousel-item">
-                            <div class="item-top">
-                                <div class="caroussel-img"><img src="../assets/<?php echo $ligne['image'] ?>"
-                                        alt="Image 1"></div>
-                                <div class="item-desc">
-                                    <div class="item-title"><?php echo $ligne['title'] ?></div>
-                                    <div class="pieces"> <?php echo $ligne['pieces'] ?> <span>pièces</span></div>
+                    <div class="carousel-item">
+                        <div class="item-top">
+                            <div class="caroussel-img">
+                                <img src="../assets/<?php echo $ligne['image'] ?>" alt="Image 1">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div class="dialogbox">
+                                    <i class="fas fa-close  fa-1x"></i>
+                                    <div class="dialog">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <div>Modifier la publication</div>
+
+                                    </div>
+                                    <div class="dialog">
+                                        <i class="fa-solid fa-trash"></i>
+                                        <div>Deplacer dans la corbeille</div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
                                 </div>
                             </div>
-                            <div class="item-bottom">
-                                <a href="presentation.php?house=<?php echo $ligne['id'] ?>"><div>voir +</div></a>
-                                <button type="button"><i class="fa-solid fa-share-nodes fa-2x"></i></button>
+                            <div class="item-desc">
+                                <div class="item-title">
+                                    <?php echo $ligne['title'] ?>
+                                </div>
+                                <div class="pieces">
+                                    <?php echo $ligne['pieces'] ?> <span>pièces</span>
+                                </div>
                             </div>
                         </div>
+                        <div class="item-bottom">
+                            <a href="presentation.php?house=<?php echo $ligne['id'] ?>">
+                                <div>voir +</div>
+                            </a>
+                            <button type="button"><i class="fa-solid fa-share-nodes fa-2x"></i></button>
+                        </div>
+                    </div>
                     <?php } ?>
                 </div>
-                
+
                 <div class="carousel-navigation">
                     <div id="nothing"></div>
                     <button id="prevBtn">&#10094;</button>
@@ -136,7 +191,7 @@
         </div>
 
         <div class="others bureaux">
-            <h3>studios  &  chambres</h3>
+            <h3>studios & chambres</h3>
             <div class="carousel-container">
                 <div class="carousel-slide">
                     <?php 
@@ -145,28 +200,60 @@
                         while($ligne = mysqli_fetch_assoc($query)){
                             $i++;
                     ?>
-                        <div class="carousel-item">
-                            <div class="item-top">
-                                <div class="caroussel-img"><img src="../assets/<?php echo $ligne['image'] ?>"
-                                        alt="Image 1"></div>
-                                <div class="item-desc">
-                                    <div class="item-title"><?php echo $ligne['title'] ?></div>
-                                    <div class="pieces"> <?php echo $ligne['pieces'] ?> <span>pièces</span></div>
+                    <div class="carousel-item">
+                        <div class="item-top">
+                            <div class="caroussel-img">
+                                <img src="../assets/<?php echo $ligne['image'] ?>" alt="Image 1">
+                                <ul>
+                                    <li></li>
+                                    <li></li>
+                                    <li></li>
+                                </ul>
+                                <div class="dialogbox">
+                                    <i class="fas fa-close  fa-1x"></i>
+                                    <div class="dialog">
+                                        <i class="fa-solid fa-pen"></i>
+                                        <div>Modifier la publication</div>
+                                    </div>
+                                    <div class="dialog">
+                                        <i class="fa-solid fa-trash"></i>
+                                        <div>Deplacer dans la corbeille</div>
+
+                                    </div>
+                                    <div>
+
+                                    </div>
+                                </div>
+                                <div>
+
                                 </div>
                             </div>
-                            <div class="item-bottom">
-                                <a href="#"><div>voir +</div></a>
-                                <button type="button"><i class="fa-solid fa-share-nodes fa-2x"></i></button>
+                            <div class="item-desc">
+                                <div class="item-title">
+                                    <?php echo $ligne['title'] ?>
+                                </div>
+                                <div class="pieces">
+                                    <?php echo $ligne['pieces'] ?> <span>pièces</span>
+                                </div>
                             </div>
                         </div>
+                        <div class="item-bottom">
+                            <a href="#">
+                                <div>voir +</div>
+                            </a>
+                            <button type="button"><i class="fa-solid fa-share-nodes fa-2x"></i></button>
+                        </div>
+                    </div>
                     <?php 
                         } 
                         if($i === 0){
-                            ?><h4>Empty house</h4><?php
+                            ?>
+                    <h4>Empty house</h4>
+                    <?php
                         }
                     ?>
                 </div>
-                
+
                 <div class="carousel-navigation">
                     <div id="nothing"></div>
                     <button id="prevBtn">&#10094;</button>
@@ -179,7 +266,6 @@
 </body>
 <script src="../js/script.js"></script>
 <script src="../js/jquery.js"></script>
-<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> -->
 <script src="../js/immob.js"></script>
 
 
