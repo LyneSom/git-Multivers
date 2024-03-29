@@ -243,14 +243,10 @@ for (var index = 0 ; index < btnul.length; index++) {
     }
     var ul = e.target
     var parent = ul.parentElement.parentElement
-    console.log(parent)
     var dialogbox = parent.querySelector(".dialogbox")
-    console.log(dialogbox)
-    // dialogbox.style.display = 'flex'
     dialogbox.classList.add("show")
     
   })
-  
 }
 let btnclose = document.querySelectorAll(".fa-close")
 for(let i = 0; i < btnclose.length; i++){
@@ -261,18 +257,29 @@ for(let i = 0; i < btnclose.length; i++){
       console.log(parent)
       var dialogbox = parent.querySelector(".dialogbox")
       console.log(dialogbox)
-      dialogbox.style.display = 'none'
+      dialogbox.classList.remove("show")
      
   })
   
 }
 
+let edit = document.querySelectorAll(".edit")
+for(let k = 0; k< edit.length; k++){
+  edit[k].addEventListener("click", () =>{
+    window.location.href = "HouseModif.php"
+  });
+}
 
-
-
-
-let edit = document.getElementById("edit")
-console.log(edit)
-edit.addEventListener("click", () =>{
-  window.location.href = "HouseModif.php"
-})
+// Ajoute un écouteur d'événements pour les clics sur la page
+document.addEventListener('click', (event) => {
+  event.preventDefault
+  const mynav = document.querySelectorAll(".dialogbox");
+  const btnul = document.querySelectorAll(".carousel-item ul");
+  // Vérifie si l'élément cliqué n'est pas dans mynav et que mynav est affiché en bloc et que l'élément cliqué n'est pas menue
+  for (let index = 0; index < mynav.length; index++) {
+    if (!mynav[index].contains(event.target) && mynav[index].classList.contains('show') && !btnul[index].contains(event.target)) {
+      // Si ces conditions sont remplies, masque mynav et change la couleur de menue en noir
+      document.getElementsByClassName("show")[0].classList.remove("show")
+    }
+  }
+});

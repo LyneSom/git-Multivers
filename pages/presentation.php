@@ -16,6 +16,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="../style/immob.css">
+
+    <style>
+        body{
+            padding: 5% 2%;
+        }
+    </style>
     
 </head>
 
@@ -71,15 +77,6 @@
             <?php echo $houseBd['description'] ?>
         </div>
     </div>
-    <center>
-        <div style="width: 50%;display: flex;justify-content: space-between;margin: 5% 0;">
-            <img src="../assets/icons/icons8_comments_24px.png" alt="">
-            <img src="../assets/icons/icons8_ringer_volume_30px.png" alt="" srcset="">
-        </div>
-        <button type="button" id="reservez" style="width: 85%;" onclick="reserver(<?php echo $house; ?>)">
-            Reservez maintenant
-        </button>
-    </center>
 </body>
 <script src="../js/script.js"></script>
 <script src="../js/jquery.js"></script>

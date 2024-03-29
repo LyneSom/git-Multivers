@@ -89,7 +89,7 @@
                                     <i class="fas fa-close  fa-1x"></i>
                                     <div class="dialog">
                                         <i class="fa-solid fa-pen"></i>
-                                        <div id="edit">Modifier la publication</div>
+                                        <div class="edit">Modifier la publication</div>
 
                                     </div>
                                     <div class="dialog">
@@ -150,7 +150,7 @@
                                     <i class="fas fa-close  fa-1x"></i>
                                     <div class="dialog">
                                         <i class="fa-solid fa-pen"></i>
-                                        <div>Modifier la publication</div>
+                                        <div class="edit">Modifier la publication</div>
 
                                     </div>
                                     <div class="dialog">
@@ -213,7 +213,7 @@
                                     <i class="fas fa-close  fa-1x"></i>
                                     <div class="dialog">
                                         <i class="fa-solid fa-pen"></i>
-                                        <div>Modifier la publication</div>
+                                        <div class="edit">Modifier la publication</div>
                                     </div>
                                     <div class="dialog">
                                         <i class="fa-solid fa-trash"></i>

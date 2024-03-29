@@ -36,7 +36,7 @@
                 <div class="Appart-nbpiece Appart-select">
                     <div class="choice">Appartement</div>
                     <div class="small-circle">
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down fa-chevron"></i>
                     </div>
                     <ul>
                         <li>Appartement</li>
@@ -55,7 +55,7 @@
                 <div class="Appart-nbpiece Appart-select">
                     <div class="choice"> Cameroun</div>
                     <div class="small-circle" id="chevron">
-                        <i class="fas fa-chevron-down"></i>
+                        <i class="fas fa-chevron-down fa-chevron"></i>
                     </div>
                         <ul>
                             <li>Cameroun</li>
@@ -81,7 +81,7 @@
         <div class="btnEdit">
             <button>Modifier</button>
             <button>Ajouter</button>
-            <button>Abandonner</button>
+            <button type = "button">Abandonner</button>
         </div>
     </nav>
 

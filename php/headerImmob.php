@@ -1,7 +1,7 @@
 <header>
         <img src="../assets/image_multivers/multivers.jpg" alt="logo">
         <div class="main">
-            <i class=" fa fa-solid fa-bars fa-3x"></i>
+            <i class=" fa fa-solid fa-bars fa-2x"></i>
             <div id="sidebar" class="sidebar">
                 <a href="#desc">
                     <div class="active"><i class="fa-solid fa-house"></i>Accueil</div>

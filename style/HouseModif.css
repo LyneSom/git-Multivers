@@ -100,7 +100,7 @@ img {
 }
 
 .fa-pen,
-.fa-chevron-down {
+.fa-chevron {
     color: black;
     font-weight: none;
 }
@@ -110,7 +110,7 @@ img {
     margin-left: 25%;
 }
 
-.fa-chevron-down {
+.fa-chevron {
     margin-top: 7px;
     margin-left: 5px;
 
